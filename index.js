@@ -31,7 +31,7 @@ let iteration = async () => {
 
   console.log("Let's check")
  
-    let browser = await puppeteer.launch({headless:false});
+    let browser = await puppeteer.launch({headless:true});
     let page = await browser.newPage();
  
     await page.goto("https://webparent.paiementdp.com/aliAuthentification.php?site=aes00674");
