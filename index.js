@@ -75,4 +75,4 @@ let iteration = async () => {
     await browser.close()
 };
 
-setInterval(iteration, 60000)
+setInterval(iteration, 1800000)
