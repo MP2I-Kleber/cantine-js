@@ -53,7 +53,7 @@ let iteration = async () => {
     result1 = result1.filter(elt => elt.indexOf("aliReservationDetail.php") > -1)
 
     let result2 = await page.evaluate(() => {
-      const elements = document.querySelectorAll(".page > table:nth-child(12) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr > td > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > a:nth-child(1)");
+      const elements = document.querySelectorAll(".page > table:nth-child(12) > tbody:nth-child(1) > tr:nth-child(1) > td > table:nth-child(2) > tbody:nth-child(1) > tr > td > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > a:nth-child(1)");
       return Array.from(elements).map(element => element.href);
     });
     result2 = result2.filter(elt => elt.indexOf("aliReservationDetail.php") > -1)
